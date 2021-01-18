@@ -1,0 +1,116 @@
+#VRML_SIM R2020b utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation -0.09222095858939618 -0.9928281424710022 -0.07607610869670174 2.0110777918159024
+  position -86.55327505625824 7.951834350145495 57.762174480809655
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+UnevenTerrain {
+  size 200 5 200
+  xDimension 200
+  zDimension 37
+}
+ModernHouse {
+  translation -89.64 2.02 73.05
+  name "modern house(Station)"
+}
+Group {
+  children [
+    Group {
+      children [
+        SimpleTree {
+          translation -51.5 2.92 58.2
+          name "tree(1)"
+          locked FALSE
+        }
+        SimpleTree {
+          translation -59.33 3.15 44.73
+          name "tree(5)"
+          locked FALSE
+        }
+        SimpleTree {
+          translation -49.4 2.85 50.62
+          name "tree(8)"
+          type "birch tree"
+          locked FALSE
+        }
+        SimpleTree {
+          translation -41.44 2.96 63.43
+          name "tree(2)"
+          type "spruce"
+          locked FALSE
+        }
+        SimpleTree {
+          translation -49.4 2.85 61.04
+          name "tree(8)"
+          type "birch tree"
+          locked FALSE
+        }
+        SimpleTree {
+          translation -62.02 2.87 62.45
+          name "tree(8)"
+          type "birch tree"
+          locked FALSE
+        }
+        SimpleTree {
+          translation -57.6 2.85 51.96
+          name "tree(8)"
+          type "birch tree"
+          locked FALSE
+        }
+      ]
+    }
+    Group {
+      children [
+        SimpleTree {
+          translation -51.5 1.92 76.81
+          name "tree(4)"
+          locked FALSE
+        }
+        SimpleTree {
+          translation -59.33 3.15 65.03
+          name "tree(9)"
+          locked FALSE
+        }
+        SimpleTree {
+          translation -49.4 2.85 70.21
+          name "tree(3)"
+          type "birch tree"
+          locked FALSE
+        }
+        SimpleTree {
+          translation -39.74 2.59 85.61
+          name "tree(7)"
+          type "spruce"
+          locked FALSE
+        }
+        SimpleTree {
+          translation -49.4 2.85 80.94
+          name "tree(9)"
+          type "birch tree"
+          locked FALSE
+        }
+        SimpleTree {
+          translation -37.92 2.85 70.21
+          name "tree(6)"
+          type "birch tree"
+          locked FALSE
+        }
+        SimpleTree {
+          translation -54.9 2.85 74.26
+          name "tree(9)"
+          type "birch tree"
+          locked FALSE
+        }
+      ]
+    }
+  ]
+}
+Sojourner {
+  translation -66.57 2.87 66.07
+}
