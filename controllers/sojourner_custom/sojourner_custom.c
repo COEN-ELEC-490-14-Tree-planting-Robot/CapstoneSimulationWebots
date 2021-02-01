@@ -23,9 +23,10 @@
 #include <webots/keyboard.h>
 #include <webots/motor.h>
 #include <webots/robot.h>
+#include <webots/camera.h>
 
 #define TIME_STEP 64
-#define VELOCITY 2
+#define VELOCITY 0.6
 
 enum {
   back_left_bogie,
@@ -112,7 +113,9 @@ void turn_around(double v) {
 int main() {
   // Required to initialize Webots
   wb_robot_init();
-
+  WbDeviceTag myCam = wb_robot_get_device("camera");
+  wb_camera_enable(myCam, TIME_STEP);
+  
   joints[back_left_bogie] = wb_robot_get_device("BackLeftBogie");
   joints[front_left_bogie] = wb_robot_get_device("FrontLeftBogie");
   joints[front_left_arm] = wb_robot_get_device("FrontLeftArm");
