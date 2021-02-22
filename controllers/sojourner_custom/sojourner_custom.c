@@ -24,7 +24,8 @@
 #include <webots/motor.h>
 #include <webots/robot.h>
 #include <webots/camera.h>
-
+#include <webots/lidar.h>
+#include <windows.h>
 #define TIME_STEP 64
 #define VELOCITY 0.6
 
@@ -109,13 +110,57 @@ void turn_around(double v) {
   wb_motor_set_available_torque(joints[middle_right_wheel], 0.0);
   wb_motor_set_available_torque(joints[middle_left_wheel], 0.0);
 }
+void write_to_file(const WbLidarPoint * pointArray, int layer_size, int layer){
+  
+  FILE *in_file;
+  if(layer == 0)
+    in_file = fopen("points.txt", "w");
+  else
+    in_file = fopen("points.txt", "a");
+  
+  if(in_file == NULL)
+  {
+    printf("error\n");
+  }
+  for(int i=0; i < layer_size; i++)
+  {
+    WbLidarPoint p = *(pointArray + i);
+    fprintf(in_file, "points=[%f,%f,%f], layer=%d\n",p.x,p.y,p.z,p.layer_id);
+  }
+  if(in_file != NULL)
+  {
+    fclose(in_file);
+  }
+}
+void print_lidar_info(WbDeviceTag tag)
+{
+  printf("horizontal resolution = %i\n",wb_lidar_get_horizontal_resolution(tag));
+  printf("number of layers = %i\n",wb_lidar_get_number_of_layers(tag));
+  printf("fov = %lf\n",wb_lidar_get_fov(tag));
+  printf("vfov = %lf\n",wb_lidar_get_vertical_fov(tag));
+  printf("num of points = %i\n",wb_lidar_get_number_of_points(tag));
+  for(int i=0;i<wb_lidar_get_number_of_layers(tag);i++)
+  {
+    write_to_file(wb_lidar_get_layer_point_cloud(tag,i),wb_lidar_get_horizontal_resolution(tag),i);
+    printf("points written to file points.txt\n");
+  }
+}
+
 
 int main() {
   // Required to initialize Webots
   wb_robot_init();
+  
+  //camera 
   WbDeviceTag myCam = wb_robot_get_device("camera");
   wb_camera_enable(myCam, TIME_STEP);
   
+  //lidar
+  WbDeviceTag myPuck = wb_robot_get_device("Velodyne Puck");
+  wb_lidar_enable(myPuck, TIME_STEP);
+  wb_lidar_enable_point_cloud(myPuck);
+  
+  //wheels
   joints[back_left_bogie] = wb_robot_get_device("BackLeftBogie");
   joints[front_left_bogie] = wb_robot_get_device("FrontLeftBogie");
   joints[front_left_arm] = wb_robot_get_device("FrontLeftArm");
@@ -143,8 +188,9 @@ int main() {
   printf("Q: forwards-left;  W: forwards;  E: forwards-right\n");
   printf("S: spin counter-clockwise\n");
   printf("Y: backwards-left; X: backwards; C: backwards-right\n");
+  printf("P: print lidar info\n");
   wb_keyboard_enable(TIME_STEP);
-
+  
   // start moving
   move_6_wheels(1.0);
 
@@ -184,6 +230,12 @@ int main() {
       case 'S':
         // spin counter-clockwise
         turn_around(1.0);
+        printf("S is pressed\n");
+        break;
+      case 'P':
+        // generate point cloud
+        printf("P is pressed\n");
+        print_lidar_info(myPuck);
         break;
     }
   }

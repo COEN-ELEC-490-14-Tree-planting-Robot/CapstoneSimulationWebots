@@ -1,0 +1,60 @@
+﻿  Generate moc_predefs.h
+  UIC ImageInterface.ui
+  UIC VRenderInterface.ui
+  MOC camera.h
+  MOC frame.h
+  MOC keyFrameInterpolator.h
+  MOC manipulatedCameraFrame.h
+  MOC manipulatedFrame.h
+  MOC qglviewer.h
+cl : command line warning D9002: ignoring unknown option '-EH'
+  BSPSortMethod.cpp
+E:\school\490\CapstoneSimulationWebots\libraries\octomap-1.9.6\octovis\src\extern\QGLViewer\VRender\BSPSortMethod.cpp(84,53): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+E:\school\490\CapstoneSimulationWebots\libraries\octomap-1.9.6\octovis\src\extern\QGLViewer\VRender\BSPSortMethod.cpp(316,25): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+E:\school\490\CapstoneSimulationWebots\libraries\octomap-1.9.6\octovis\src\extern\QGLViewer\VRender\BSPSortMethod.cpp(599,51): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+E:\school\490\CapstoneSimulationWebots\libraries\octomap-1.9.6\octovis\src\extern\QGLViewer\VRender\BSPSortMethod.cpp(605,24): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+  BackFaceCullingOptimizer.cpp
+  EPSExporter.cpp
+E:\school\490\CapstoneSimulationWebots\libraries\octomap-1.9.6\octovis\src\extern\QGLViewer\VRender\EPSExporter.cpp(158,30): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  Exporter.cpp
+E:\school\490\CapstoneSimulationWebots\libraries\octomap-1.9.6\octovis\src\extern\QGLViewer\VRender\Exporter.cpp(76,49): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+  FIGExporter.cpp
+E:\school\490\CapstoneSimulationWebots\libraries\octomap-1.9.6\octovis\src\extern\QGLViewer\VRender\FIGExporter.cpp(184,30): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  NVector3.cpp
+  ParserGL.cpp
+E:\school\490\CapstoneSimulationWebots\libraries\octomap-1.9.6\octovis\src\extern\QGLViewer\VRender\ParserGL.cpp(309,45): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+E:\school\490\CapstoneSimulationWebots\libraries\octomap-1.9.6\octovis\src\extern\QGLViewer\VRender\ParserGL.cpp(356,45): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Primitive.cpp
+  PrimitivePositioning.cpp
+E:\school\490\CapstoneSimulationWebots\libraries\octomap-1.9.6\octovis\src\extern\QGLViewer\VRender\PrimitivePositioning.cpp(407,46): warning C4267: '=': conversion from 'size_t' to 'long', possible loss of data
+  TopologicalSortMethod.cpp
+  VRender.cpp
+  Vector2.cpp
+  Vector3.cpp
+  VisibilityOptimizer.cpp
+E:\school\490\CapstoneSimulationWebots\libraries\octomap-1.9.6\octovis\src\extern\QGLViewer\VRender\VisibilityOptimizer.cpp(64,53): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned long', possible loss of data
+E:\school\490\CapstoneSimulationWebots\libraries\octomap-1.9.6\octovis\src\extern\QGLViewer\VRender\VisibilityOptimizer.cpp(181,96): warning C4267: '=': conversion from 'size_t' to 'long', possible loss of data
+E:\school\490\CapstoneSimulationWebots\libraries\octomap-1.9.6\octovis\src\extern\QGLViewer\VRender\VisibilityOptimizer.cpp(194,104): warning C4267: '=': conversion from 'size_t' to 'long', possible loss of data
+  camera.cpp
+  constraint.cpp
+  frame.cpp
+  gpc.cpp
+  keyFrameInterpolator.cpp
+  manipulatedCameraFrame.cpp
+  Generating Code...
+  Compiling...
+  manipulatedFrame.cpp
+  mouseGrabber.cpp
+  qglviewer.cpp
+  quaternion.cpp
+  saveSnapshot.cpp
+  vec.cpp
+  moc_camera.cpp
+  moc_frame.cpp
+  moc_keyFrameInterpolator.cpp
+  moc_manipulatedCameraFrame.cpp
+  moc_manipulatedFrame.cpp
+  moc_qglviewer.cpp
+  Generating Code...
+     Creating library .\\QGLViewerd2.lib and object .\\QGLViewerd2.exp
+  QGLViewer.vcxproj -> E:\school\490\CapstoneSimulationWebots\libraries\octomap-1.9.6\octovis\src\extern\QGLViewer\QGLViewerd2.dll

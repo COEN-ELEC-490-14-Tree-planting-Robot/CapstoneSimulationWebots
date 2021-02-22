@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{30AFD9AB-C4F6-3811-87BC-86362AD201B0}</ProjectGuid>
+    <RootNamespace>QGLViewer</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <OutputDirectory>.\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>QGLViewer2</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <OutputDirectory>.\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>QGLViewerd2</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">.\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">QGLViewer2</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">false</LinkIncremental>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">.\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">QGLViewerd2</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;E:\Qt\5.15.2\msvc2019_64\include;E:\Qt\5.15.2\msvc2019_64\include\QtOpenGL;E:\Qt\5.15.2\msvc2019_64\include\QtWidgets;E:\Qt\5.15.2\msvc2019_64\include\QtGui;E:\Qt\5.15.2\msvc2019_64\include\QtANGLE;E:\Qt\5.15.2\msvc2019_64\include\QtXml;E:\Qt\5.15.2\msvc2019_64\include\QtCore;release;.;/include;E:\Qt\5.15.2\msvc2019_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -EH -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;CREATE_QGLVIEWER_DLL;NOMINMAX;NDEBUG;QT_NO_DEBUG;QT_NO_KEYWORDS;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_XML_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName></ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;E:\Qt\5.15.2\msvc2019_64\lib\Qt5OpenGL.lib;E:\Qt\5.15.2\msvc2019_64\lib\Qt5Widgets.lib;E:\Qt\5.15.2\msvc2019_64\lib\Qt5Gui.lib;E:\Qt\5.15.2\msvc2019_64\lib\Qt5Xml.lib;E:\Qt\5.15.2\msvc2019_64\lib\Qt5Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\QGLViewer2.dll</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>2.6</Version>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;CREATE_QGLVIEWER_DLL;NOMINMAX;NDEBUG;QT_NO_DEBUG;QT_NO_KEYWORDS;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_XML_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;E:\Qt\5.15.2\msvc2019_64\include;E:\Qt\5.15.2\msvc2019_64\include\QtOpenGL;E:\Qt\5.15.2\msvc2019_64\include\QtWidgets;E:\Qt\5.15.2\msvc2019_64\include\QtGui;E:\Qt\5.15.2\msvc2019_64\include\QtANGLE;E:\Qt\5.15.2\msvc2019_64\include\QtXml;E:\Qt\5.15.2\msvc2019_64\include\QtCore;debug;.;/include;E:\Qt\5.15.2\msvc2019_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -EH -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;CREATE_QGLVIEWER_DLL;NOMINMAX;QT_NO_KEYWORDS;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_XML_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;E:\Qt\5.15.2\msvc2019_64\lib\Qt5OpenGLd.lib;E:\Qt\5.15.2\msvc2019_64\lib\Qt5Widgetsd.lib;E:\Qt\5.15.2\msvc2019_64\lib\Qt5Guid.lib;E:\Qt\5.15.2\msvc2019_64\lib\Qt5Xmld.lib;E:\Qt\5.15.2\msvc2019_64\lib\Qt5Cored.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <OutputFile>$(OutDir)\QGLViewerd2.dll</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>2.6</Version>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;CREATE_QGLVIEWER_DLL;NOMINMAX;QT_NO_KEYWORDS;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_XML_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="VRender\BSPSortMethod.cpp" />
+    <ClCompile Include="VRender\BackFaceCullingOptimizer.cpp" />
+    <ClCompile Include="VRender\EPSExporter.cpp" />
+    <ClCompile Include="VRender\Exporter.cpp" />
+    <ClCompile Include="VRender\FIGExporter.cpp" />
+    <ClCompile Include="VRender\NVector3.cpp" />
+    <ClCompile Include="VRender\ParserGL.cpp" />
+    <ClCompile Include="VRender\Primitive.cpp" />
+    <ClCompile Include="VRender\PrimitivePositioning.cpp" />
+    <ClCompile Include="VRender\TopologicalSortMethod.cpp" />
+    <ClCompile Include="VRender\VRender.cpp" />
+    <ClCompile Include="VRender\Vector2.cpp" />
+    <ClCompile Include="VRender\Vector3.cpp" />
+    <ClCompile Include="VRender\VisibilityOptimizer.cpp" />
+    <ClCompile Include="camera.cpp" />
+    <ClCompile Include="constraint.cpp" />
+    <ClCompile Include="frame.cpp" />
+    <ClCompile Include="VRender\gpc.cpp" />
+    <ClCompile Include="keyFrameInterpolator.cpp" />
+    <ClCompile Include="manipulatedCameraFrame.cpp" />
+    <ClCompile Include="manipulatedFrame.cpp" />
+    <ClCompile Include="mouseGrabber.cpp" />
+    <ClCompile Include="qglviewer.cpp" />
+    <ClCompile Include="quaternion.cpp" />
+    <ClCompile Include="saveSnapshot.cpp" />
+    <ClCompile Include="vec.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="VRender\AxisAlignedBox.h" />
+    <ClInclude Include="VRender\Exporter.h" />
+    <ClInclude Include="VRender\NVector3.h" />
+    <ClInclude Include="VRender\Optimizer.h" />
+    <ClInclude Include="VRender\ParserGL.h" />
+    <ClInclude Include="VRender\Primitive.h" />
+    <ClInclude Include="VRender\PrimitivePositioning.h" />
+    <ClInclude Include="VRender\SortMethod.h" />
+    <ClInclude Include="VRender\Types.h" />
+    <ClInclude Include="VRender\VRender.h" />
+    <ClInclude Include="VRender\Vector2.h" />
+    <ClInclude Include="VRender\Vector3.h" />
+    <CustomBuild Include="camera.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">camera.h;release\moc_predefs.h;E:\Qt\5.15.2\msvc2019_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">E:\Qt\5.15.2\msvc2019_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DCREATE_QGLVIEWER_DLL -DNOMINMAX -DNDEBUG -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include E:/school/490/CapstoneSimulationWebots/libraries/octomap-1.9.6/octovis/src/extern/QGLViewer/release/moc_predefs.h -IE:/Qt/5.15.2/msvc2019_64/mkspecs/win32-msvc -IE:/school/490/CapstoneSimulationWebots/libraries/octomap-1.9.6/octovis/src/extern/QGLViewer -IE:/Qt/5.15.2/msvc2019_64/include -IE:/Qt/5.15.2/msvc2019_64/include/QtOpenGL -IE:/Qt/5.15.2/msvc2019_64/include/QtWidgets -IE:/Qt/5.15.2/msvc2019_64/include/QtGui -IE:/Qt/5.15.2/msvc2019_64/include/QtANGLE -IE:/Qt/5.15.2/msvc2019_64/include/QtXml -IE:/Qt/5.15.2/msvc2019_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt&quot; camera.h -o release\moc_camera.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC camera.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_camera.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">camera.h;debug\moc_predefs.h;E:\Qt\5.15.2\msvc2019_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">E:\Qt\5.15.2\msvc2019_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DCREATE_QGLVIEWER_DLL -DNOMINMAX -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include E:/school/490/CapstoneSimulationWebots/libraries/octomap-1.9.6/octovis/src/extern/QGLViewer/debug/moc_predefs.h -IE:/Qt/5.15.2/msvc2019_64/mkspecs/win32-msvc -IE:/school/490/CapstoneSimulationWebots/libraries/octomap-1.9.6/octovis/src/extern/QGLViewer -IE:/Qt/5.15.2/msvc2019_64/include -IE:/Qt/5.15.2/msvc2019_64/include/QtOpenGL -IE:/Qt/5.15.2/msvc2019_64/include/QtWidgets -IE:/Qt/5.15.2/msvc2019_64/include/QtGui -IE:/Qt/5.15.2/msvc2019_64/include/QtANGLE -IE:/Qt/5.15.2/msvc2019_64/include/QtXml -IE:/Qt/5.15.2/msvc2019_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt&quot; camera.h -o debug\moc_camera.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC camera.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_camera.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="config.h" />
+    <ClInclude Include="constraint.h" />
+    <ClInclude Include="domUtils.h" />
+    <CustomBuild Include="frame.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">frame.h;release\moc_predefs.h;E:\Qt\5.15.2\msvc2019_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">E:\Qt\5.15.2\msvc2019_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DCREATE_QGLVIEWER_DLL -DNOMINMAX -DNDEBUG -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include E:/school/490/CapstoneSimulationWebots/libraries/octomap-1.9.6/octovis/src/extern/QGLViewer/release/moc_predefs.h -IE:/Qt/5.15.2/msvc2019_64/mkspecs/win32-msvc -IE:/school/490/CapstoneSimulationWebots/libraries/octomap-1.9.6/octovis/src/extern/QGLViewer -IE:/Qt/5.15.2/msvc2019_64/include -IE:/Qt/5.15.2/msvc2019_64/include/QtOpenGL -IE:/Qt/5.15.2/msvc2019_64/include/QtWidgets -IE:/Qt/5.15.2/msvc2019_64/include/QtGui -IE:/Qt/5.15.2/msvc2019_64/include/QtANGLE -IE:/Qt/5.15.2/msvc2019_64/include/QtXml -IE:/Qt/5.15.2/msvc2019_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt&quot; frame.h -o release\moc_frame.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC frame.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_frame.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">frame.h;debug\moc_predefs.h;E:\Qt\5.15.2\msvc2019_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">E:\Qt\5.15.2\msvc2019_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DCREATE_QGLVIEWER_DLL -DNOMINMAX -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include E:/school/490/CapstoneSimulationWebots/libraries/octomap-1.9.6/octovis/src/extern/QGLViewer/debug/moc_predefs.h -IE:/Qt/5.15.2/msvc2019_64/mkspecs/win32-msvc -IE:/school/490/CapstoneSimulationWebots/libraries/octomap-1.9.6/octovis/src/extern/QGLViewer -IE:/Qt/5.15.2/msvc2019_64/include -IE:/Qt/5.15.2/msvc2019_64/include/QtOpenGL -IE:/Qt/5.15.2/msvc2019_64/include/QtWidgets -IE:/Qt/5.15.2/msvc2019_64/include/QtGui -IE:/Qt/5.15.2/msvc2019_64/include/QtANGLE -IE:/Qt/5.15.2/msvc2019_64/include/QtXml -IE:/Qt/5.15.2/msvc2019_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt&quot; frame.h -o debug\moc_frame.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC frame.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_frame.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="VRender\gpc.h" />
+    <CustomBuild Include="keyFrameInterpolator.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">keyFrameInterpolator.h;release\moc_predefs.h;E:\Qt\5.15.2\msvc2019_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">E:\Qt\5.15.2\msvc2019_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DCREATE_QGLVIEWER_DLL -DNOMINMAX -DNDEBUG -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include E:/school/490/CapstoneSimulationWebots/libraries/octomap-1.9.6/octovis/src/extern/QGLViewer/release/moc_predefs.h -IE:/Qt/5.15.2/msvc2019_64/mkspecs/win32-msvc -IE:/school/490/CapstoneSimulationWebots/libraries/octomap-1.9.6/octovis/src/extern/QGLViewer -IE:/Qt/5.15.2/msvc2019_64/include -IE:/Qt/5.15.2/msvc2019_64/include/QtOpenGL -IE:/Qt/5.15.2/msvc2019_64/include/QtWidgets -IE:/Qt/5.15.2/msvc2019_64/include/QtGui -IE:/Qt/5.15.2/msvc2019_64/include/QtANGLE -IE:/Qt/5.15.2/msvc2019_64/include/QtXml -IE:/Qt/5.15.2/msvc2019_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt&quot; keyFrameInterpolator.h -o release\moc_keyFrameInterpolator.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC keyFrameInterpolator.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_keyFrameInterpolator.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">keyFrameInterpolator.h;debug\moc_predefs.h;E:\Qt\5.15.2\msvc2019_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">E:\Qt\5.15.2\msvc2019_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DCREATE_QGLVIEWER_DLL -DNOMINMAX -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include E:/school/490/CapstoneSimulationWebots/libraries/octomap-1.9.6/octovis/src/extern/QGLViewer/debug/moc_predefs.h -IE:/Qt/5.15.2/msvc2019_64/mkspecs/win32-msvc -IE:/school/490/CapstoneSimulationWebots/libraries/octomap-1.9.6/octovis/src/extern/QGLViewer -IE:/Qt/5.15.2/msvc2019_64/include -IE:/Qt/5.15.2/msvc2019_64/include/QtOpenGL -IE:/Qt/5.15.2/msvc2019_64/include/QtWidgets -IE:/Qt/5.15.2/msvc2019_64/include/QtGui -IE:/Qt/5.15.2/msvc2019_64/include/QtANGLE -IE:/Qt/5.15.2/msvc2019_64/include/QtXml -IE:/Qt/5.15.2/msvc2019_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt&quot; keyFrameInterpolator.h -o debug\moc_keyFrameInterpolator.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC keyFrameInterpolator.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_keyFrameInterpolator.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="manipulatedCameraFrame.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">manipulatedCameraFrame.h;release\moc_predefs.h;E:\Qt\5.15.2\msvc2019_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">E:\Qt\5.15.2\msvc2019_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DCREATE_QGLVIEWER_DLL -DNOMINMAX -DNDEBUG -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include E:/school/490/CapstoneSimulationWebots/libraries/octomap-1.9.6/octovis/src/extern/QGLViewer/release/moc_predefs.h -IE:/Qt/5.15.2/msvc2019_64/mkspecs/win32-msvc -IE:/school/490/CapstoneSimulationWebots/libraries/octomap-1.9.6/octovis/src/extern/QGLViewer -IE:/Qt/5.15.2/msvc2019_64/include -IE:/Qt/5.15.2/msvc2019_64/include/QtOpenGL -IE:/Qt/5.15.2/msvc2019_64/include/QtWidgets -IE:/Qt/5.15.2/msvc2019_64/include/QtGui -IE:/Qt/5.15.2/msvc2019_64/include/QtANGLE -IE:/Qt/5.15.2/msvc2019_64/include/QtXml -IE:/Qt/5.15.2/msvc2019_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt&quot; manipulatedCameraFrame.h -o release\moc_manipulatedCameraFrame.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC manipulatedCameraFrame.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_manipulatedCameraFrame.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">manipulatedCameraFrame.h;debug\moc_predefs.h;E:\Qt\5.15.2\msvc2019_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">E:\Qt\5.15.2\msvc2019_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DCREATE_QGLVIEWER_DLL -DNOMINMAX -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include E:/school/490/CapstoneSimulationWebots/libraries/octomap-1.9.6/octovis/src/extern/QGLViewer/debug/moc_predefs.h -IE:/Qt/5.15.2/msvc2019_64/mkspecs/win32-msvc -IE:/school/490/CapstoneSimulationWebots/libraries/octomap-1.9.6/octovis/src/extern/QGLViewer -IE:/Qt/5.15.2/msvc2019_64/include -IE:/Qt/5.15.2/msvc2019_64/include/QtOpenGL -IE:/Qt/5.15.2/msvc2019_64/include/QtWidgets -IE:/Qt/5.15.2/msvc2019_64/include/QtGui -IE:/Qt/5.15.2/msvc2019_64/include/QtANGLE -IE:/Qt/5.15.2/msvc2019_64/include/QtXml -IE:/Qt/5.15.2/msvc2019_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt&quot; manipulatedCameraFrame.h -o debug\moc_manipulatedCameraFrame.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC manipulatedCameraFrame.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_manipulatedCameraFrame.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="manipulatedFrame.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">manipulatedFrame.h;release\moc_predefs.h;E:\Qt\5.15.2\msvc2019_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">E:\Qt\5.15.2\msvc2019_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DCREATE_QGLVIEWER_DLL -DNOMINMAX -DNDEBUG -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include E:/school/490/CapstoneSimulationWebots/libraries/octomap-1.9.6/octovis/src/extern/QGLViewer/release/moc_predefs.h -IE:/Qt/5.15.2/msvc2019_64/mkspecs/win32-msvc -IE:/school/490/CapstoneSimulationWebots/libraries/octomap-1.9.6/octovis/src/extern/QGLViewer -IE:/Qt/5.15.2/msvc2019_64/include -IE:/Qt/5.15.2/msvc2019_64/include/QtOpenGL -IE:/Qt/5.15.2/msvc2019_64/include/QtWidgets -IE:/Qt/5.15.2/msvc2019_64/include/QtGui -IE:/Qt/5.15.2/msvc2019_64/include/QtANGLE -IE:/Qt/5.15.2/msvc2019_64/include/QtXml -IE:/Qt/5.15.2/msvc2019_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt&quot; manipulatedFrame.h -o release\moc_manipulatedFrame.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC manipulatedFrame.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_manipulatedFrame.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">manipulatedFrame.h;debug\moc_predefs.h;E:\Qt\5.15.2\msvc2019_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">E:\Qt\5.15.2\msvc2019_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DCREATE_QGLVIEWER_DLL -DNOMINMAX -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include E:/school/490/CapstoneSimulationWebots/libraries/octomap-1.9.6/octovis/src/extern/QGLViewer/debug/moc_predefs.h -IE:/Qt/5.15.2/msvc2019_64/mkspecs/win32-msvc -IE:/school/490/CapstoneSimulationWebots/libraries/octomap-1.9.6/octovis/src/extern/QGLViewer -IE:/Qt/5.15.2/msvc2019_64/include -IE:/Qt/5.15.2/msvc2019_64/include/QtOpenGL -IE:/Qt/5.15.2/msvc2019_64/include/QtWidgets -IE:/Qt/5.15.2/msvc2019_64/include/QtGui -IE:/Qt/5.15.2/msvc2019_64/include/QtANGLE -IE:/Qt/5.15.2/msvc2019_64/include/QtXml -IE:/Qt/5.15.2/msvc2019_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt&quot; manipulatedFrame.h -o debug\moc_manipulatedFrame.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC manipulatedFrame.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_manipulatedFrame.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="mouseGrabber.h" />
+    <CustomBuild Include="qglviewer.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">qglviewer.h;release\moc_predefs.h;E:\Qt\5.15.2\msvc2019_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">E:\Qt\5.15.2\msvc2019_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DCREATE_QGLVIEWER_DLL -DNOMINMAX -DNDEBUG -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include E:/school/490/CapstoneSimulationWebots/libraries/octomap-1.9.6/octovis/src/extern/QGLViewer/release/moc_predefs.h -IE:/Qt/5.15.2/msvc2019_64/mkspecs/win32-msvc -IE:/school/490/CapstoneSimulationWebots/libraries/octomap-1.9.6/octovis/src/extern/QGLViewer -IE:/Qt/5.15.2/msvc2019_64/include -IE:/Qt/5.15.2/msvc2019_64/include/QtOpenGL -IE:/Qt/5.15.2/msvc2019_64/include/QtWidgets -IE:/Qt/5.15.2/msvc2019_64/include/QtGui -IE:/Qt/5.15.2/msvc2019_64/include/QtANGLE -IE:/Qt/5.15.2/msvc2019_64/include/QtXml -IE:/Qt/5.15.2/msvc2019_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt&quot; qglviewer.h -o release\moc_qglviewer.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC qglviewer.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_qglviewer.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">qglviewer.h;debug\moc_predefs.h;E:\Qt\5.15.2\msvc2019_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">E:\Qt\5.15.2\msvc2019_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DCREATE_QGLVIEWER_DLL -DNOMINMAX -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include E:/school/490/CapstoneSimulationWebots/libraries/octomap-1.9.6/octovis/src/extern/QGLViewer/debug/moc_predefs.h -IE:/Qt/5.15.2/msvc2019_64/mkspecs/win32-msvc -IE:/school/490/CapstoneSimulationWebots/libraries/octomap-1.9.6/octovis/src/extern/QGLViewer -IE:/Qt/5.15.2/msvc2019_64/include -IE:/Qt/5.15.2/msvc2019_64/include/QtOpenGL -IE:/Qt/5.15.2/msvc2019_64/include/QtWidgets -IE:/Qt/5.15.2/msvc2019_64/include/QtGui -IE:/Qt/5.15.2/msvc2019_64/include/QtANGLE -IE:/Qt/5.15.2/msvc2019_64/include/QtXml -IE:/Qt/5.15.2/msvc2019_64/include/QtCore -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include&quot; -I&quot;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt&quot; qglviewer.h -o debug\moc_qglviewer.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC qglviewer.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_qglviewer.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="quaternion.h" />
+    <ClInclude Include="vec.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug\moc_camera.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_camera.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_frame.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_frame.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_keyFrameInterpolator.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_keyFrameInterpolator.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_manipulatedCameraFrame.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_manipulatedCameraFrame.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_manipulatedFrame.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_manipulatedFrame.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">E:\Qt\5.15.2\msvc2019_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">cl -BxE:\Qt\5.15.2\msvc2019_64\bin\qmake.exe -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -TP -GR -EH -Zi -MDd -GR -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E E:\Qt\5.15.2\msvc2019_64\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;debug\moc_predefs.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">Generate moc_predefs.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">E:\Qt\5.15.2\msvc2019_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">cl -BxE:\Qt\5.15.2\msvc2019_64\bin\qmake.exe -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -TP -GR -EH -O2 -MD -GR -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E E:\Qt\5.15.2\msvc2019_64\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;release\moc_predefs.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">Generate moc_predefs.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_predefs.h;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ClCompile Include="debug\moc_qglviewer.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_qglviewer.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="ui_ImageInterface.h" />
+    <ClInclude Include="ui_VRenderInterface.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="qglviewer_fr.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ImageInterface.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">ImageInterface.ui;E:\Qt\5.15.2\msvc2019_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">E:\Qt\5.15.2\msvc2019_64\bin\uic.exe ImageInterface.ui -o ui_ImageInterface.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">UIC ImageInterface.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">ui_ImageInterface.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">ImageInterface.ui;E:\Qt\5.15.2\msvc2019_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">E:\Qt\5.15.2\msvc2019_64\bin\uic.exe ImageInterface.ui -o ui_ImageInterface.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">UIC ImageInterface.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">ui_ImageInterface.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="VRenderInterface.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">VRenderInterface.ui;E:\Qt\5.15.2\msvc2019_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">E:\Qt\5.15.2\msvc2019_64\bin\uic.exe VRenderInterface.ui -o ui_VRenderInterface.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">UIC VRenderInterface.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">ui_VRenderInterface.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">VRenderInterface.ui;E:\Qt\5.15.2\msvc2019_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">E:\Qt\5.15.2\msvc2019_64\bin\uic.exe VRenderInterface.ui -o ui_VRenderInterface.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">UIC VRenderInterface.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">ui_VRenderInterface.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="qglviewer-icon.xpm" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="E:\school\490\CapstoneSimulationWebots\libraries\octomap-1.9.6\octovis\src\extern\QGLViewer\QGLViewer_resource.rc">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ResourceCompile>
+    <ResourceCompile Include="E:\school\490\CapstoneSimulationWebots\libraries\octomap-1.9.6\octovis\src\extern\QGLViewer\QGLViewerd_resource.rc">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ResourceCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

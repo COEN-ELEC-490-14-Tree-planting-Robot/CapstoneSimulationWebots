@@ -5,4 +5,6 @@ build/release/sojourner_custom.o: sojourner_custom.c \
  E:\Webots/include/controller/c/webots/robot.h \
  E:\Webots/include/controller/c/webots/nodes.h \
  E:\Webots/include/controller/c/webots/camera.h \
- E:\Webots/include/controller/c/webots/camera_recognition_object.h
+ E:\Webots/include/controller/c/webots/camera_recognition_object.h \
+ E:\Webots/include/controller/c/webots/lidar.h \
+ E:\Webots/include/controller/c/webots/lidar_point.h

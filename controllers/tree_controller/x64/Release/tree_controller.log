@@ -1,0 +1,11 @@
+﻿  tree_controller.cpp
+E:\school\490\CapstoneSimulationWebots\controllers\tree_controller\tree_controller.cpp(99,70): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+E:\school\490\CapstoneSimulationWebots\controllers\tree_controller\tree_controller.cpp(137,42): warning C4244: 'argument': conversion from 'const double' to 'float', possible loss of data
+E:\school\490\CapstoneSimulationWebots\controllers\tree_controller\tree_controller.cpp(137,30): warning C4244: 'argument': conversion from 'const double' to 'float', possible loss of data
+E:\school\490\CapstoneSimulationWebots\controllers\tree_controller\tree_controller.cpp(137,24): warning C4244: 'argument': conversion from 'const double' to 'float', possible loss of data
+  Generating code
+  4 of 1295 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+    1 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  tree_controller.vcxproj -> E:\school\490\CapstoneSimulationWebots\controllers\tree_controller\tree_controller.exe

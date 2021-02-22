@@ -3,8 +3,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation 0.11898266107994429 -0.9896602016466417 -0.08009876178233534 3.8143675929591345
-  position -71.12896870166743 3.646132789692494 -102.9455794595638
+  orientation -0.30337657018040975 -0.9009072032500358 -0.31036892208752115 1.6267522869559579
+  position -123.83028877444063 41.00432602030507 -81.01274132431587
 }
 TexturedBackground {
 }
@@ -62,7 +62,7 @@ DEF House ModernHouse {
   }
 }
 DEF Tree_Bot Robot {
-  translation -82.16 0.46 -89.86
+  translation -75 4.22 -80
   children [
     Group {
       children [
@@ -110,8 +110,116 @@ DEF Tree_Bot Robot {
               height 512
               near 0.1
             }
-            VelodynePuck {
+            Lidar {
               translation 0 0.29 0
+              children [
+                InertialUnit {
+                  name "IMU"
+                }
+                GPS {
+                }
+                DEF BOTTOM Transform {
+                  translation 0 -0.0286 0
+                  children [
+                    Shape {
+                      appearance DEF COLOR PBRAppearance {
+                        baseColor 0.6 0.6 0.6
+                        roughness 0.5
+                      }
+                      geometry Cylinder {
+                        height 0.0188
+                        radius 0.05165
+                        subdivision 24
+                      }
+                    }
+                  ]
+                }
+                DEF LOGO Transform {
+                  translation 0 -0.0286 0
+                  rotation 0 1 0 3.14159
+                  children [
+                    Shape {
+                      appearance PBRAppearance {
+                        baseColorMap ImageTexture {
+                          url [
+                            "textures/velodyne.png"
+                          ]
+                          repeatS FALSE
+                          repeatT FALSE
+                        }
+                        roughness 0.6
+                        metalness 0
+                        textureTransform TextureTransform {
+                          scale 4 1.5
+                          translation -0.38 -0.09
+                        }
+                      }
+                      geometry Cylinder {
+                        bottom FALSE
+                        height 0.0188
+                        radius 0.052
+                        top FALSE
+                        subdivision 24
+                      }
+                    }
+                  ]
+                }
+                DEF GLASS Transform {
+                  translation 0 0.0004 0
+                  children [
+                    Shape {
+                      appearance PBRAppearance {
+                        baseColor 0.0470588 0.0470588 0.0470588
+                        roughness 0.1
+                        metalness 0
+                      }
+                      geometry Cylinder {
+                        height 0.0392
+                        radius 0.05165
+                        subdivision 24
+                      }
+                    }
+                  ]
+                }
+                DEF TOP Transform {
+                  translation 0 0.0274 0
+                  children [
+                    Shape {
+                      appearance USE COLOR
+                      geometry Cylinder {
+                        height 0.0147
+                        radius 0.05165
+                        subdivision 24
+                      }
+                    }
+                  ]
+                }
+              ]
+              name "Velodyne Puck"
+              model "Velodyne Puck"
+              boundingObject Transform {
+                translation 0 -0.00165 0
+                children [
+                  Cylinder {
+                    height 0.0727
+                    radius 0.052
+                  }
+                ]
+              }
+              physics Physics {
+                density -1
+                mass 0.83
+              }
+              horizontalResolution 3600
+              fieldOfView 6.28318
+              verticalFieldOfView 0.5236
+              numberOfLayers 16
+              minRange 1
+              maxRange 100
+              noise 0.003
+              defaultFrequency 5
+              minFrequency 5
+              maxFrequency 20
             }
             Shape {
               appearance PBRAppearance {
@@ -391,14 +499,12 @@ DEF Tree_Bot Robot {
       ]
       endPoint Solid {
         translation -0.108 0.015 0.2
-        rotation 0 0 -1 0.09999999999999855
+        rotation 0 0 -1 0.09999999999997634
         children [
           HingeJoint {
             jointParameters HingeJointParameters {
               axis 0 0 1
               anchor 0.175 -0.098 -0.023
-              minStop -0.7
-              maxStop 0.6
             }
             endPoint Solid {
               translation 0.175 -0.098 -0.023
@@ -440,6 +546,7 @@ DEF Tree_Bot Robot {
                   device [
                     RotationalMotor {
                       name "BackLeftArm"
+                      maxVelocity 8.33
                       minPosition -1.5708
                       maxPosition 1.5708
                     }
@@ -455,7 +562,7 @@ DEF Tree_Bot Robot {
                         device [
                           RotationalMotor {
                             name "BackLeftWheel"
-                            maxVelocity 0.6
+                            maxVelocity 8.33
                             maxTorque 2
                           }
                         ]
@@ -582,7 +689,7 @@ DEF Tree_Bot Robot {
                   device [
                     RotationalMotor {
                       name "MiddleLeftWheel"
-                      maxVelocity 0.6
+                      maxVelocity 8.33
                       maxTorque 2
                     }
                   ]
@@ -719,7 +826,7 @@ DEF Tree_Bot Robot {
       ]
       endPoint Solid {
         translation -0.108 0.015 0.2
-        rotation 0 0 1 0.09999999999999855
+        rotation 0 0 1 0.09999999999991858
         children [
           DEF bogie_FRONTLEFT_TRANSFORM Transform {
             translation -0.075 -0.041 0.006
@@ -809,7 +916,7 @@ DEF Tree_Bot Robot {
                   device [
                     RotationalMotor {
                       name "FrontLeftWheel"
-                      maxVelocity 0.6
+                      maxVelocity 8.33
                       maxTorque 2
                     }
                   ]
@@ -914,14 +1021,12 @@ DEF Tree_Bot Robot {
       ]
       endPoint Solid {
         translation -0.108 0.015 -0.2
-        rotation 0 0 -1 0.09999999999999855
+        rotation 0 0 -1 0.09999999999996301
         children [
           HingeJoint {
             jointParameters HingeJointParameters {
               axis 0 0 1
               anchor 0.175 -0.098 0.023
-              minStop -0.7
-              maxStop 0.6
             }
             endPoint Solid {
               translation 0.175 -0.098 0.023
@@ -970,7 +1075,7 @@ DEF Tree_Bot Robot {
                         device [
                           RotationalMotor {
                             name "BackRightWheel"
-                            maxVelocity 0.6
+                            maxVelocity 8.33
                             maxTorque 2
                           }
                         ]
@@ -1045,7 +1150,7 @@ DEF Tree_Bot Robot {
                   device [
                     RotationalMotor {
                       name "MiddleRightWheel"
-                      maxVelocity 0.6
+                      maxVelocity 8.33
                       maxTorque 2
                     }
                   ]
@@ -1227,7 +1332,7 @@ DEF Tree_Bot Robot {
       ]
       endPoint Solid {
         translation -0.108 0.015 -0.2
-        rotation 0 0 1 0.09999999999999855
+        rotation 0 0 0.9999999999999999 0.09999999999998967
         children [
           DEF bogie_FRONTRIGHT_TRANSFORM Transform {
             translation -0.075 -0.025 -0.006
@@ -1297,7 +1402,7 @@ DEF Tree_Bot Robot {
                   device [
                     RotationalMotor {
                       name "FrontRightWheel"
-                      maxVelocity 0.6
+                      maxVelocity 8.33
                       maxTorque 2
                     }
                   ]
@@ -1450,5 +1555,35 @@ DEF Tree_Bot Robot {
       -0.0142568 0 0
     ]
   }
-  controller "sojourner_custom"
+  controller "<extern>"
+}
+DEF Walls Group {
+  children [
+    Wall {
+      translation 0 0 100
+      name "wall(3)"
+      size 200 10 0.2
+    }
+    Wall {
+      translation 0 0 -100
+      name "wall(2)"
+      size 200 10 0.2
+    }
+    Wall {
+      translation 100 0 0.2
+      rotation 0 1 0 1.5707996938995747
+      name "wall(1)"
+      size 200 10 0.2
+    }
+    Wall {
+      translation -100 0 0.2
+      rotation 0 1 0 1.57
+      size 200 10 0.2
+    }
+  ]
+}
+Floor {
+  translation 0 4 -80
+  name "floor(1)"
+  size 160 10
 }
