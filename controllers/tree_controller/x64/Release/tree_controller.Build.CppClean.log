@@ -1,4 +1,9 @@
 e:\school\490\capstonesimulationwebots\controllers\tree_controller\x64\release\vc142.pdb
+e:\school\490\capstonesimulationwebots\controllers\tree_controller\x64\release\tree_controller.obj
+e:\school\490\capstonesimulationwebots\controllers\tree_controller\x64\release\jpge.obj
+e:\school\490\capstonesimulationwebots\controllers\tree_controller\x64\release\jpgd.obj
+e:\school\490\capstonesimulationwebots\controllers\tree_controller\x64\release\serial.obj
+e:\school\490\capstonesimulationwebots\controllers\tree_controller\x64\release\accelerometer.obj
 e:\school\490\capstonesimulationwebots\controllers\tree_controller\x64\release\motion.obj
 e:\school\490\capstonesimulationwebots\controllers\tree_controller\x64\release\lightsensor.obj
 e:\school\490\capstonesimulationwebots\controllers\tree_controller\x64\release\lidar.obj
@@ -18,8 +23,6 @@ e:\school\490\capstonesimulationwebots\controllers\tree_controller\x64\release\c
 e:\school\490\capstonesimulationwebots\controllers\tree_controller\x64\release\compass.obj
 e:\school\490\capstonesimulationwebots\controllers\tree_controller\x64\release\camera.obj
 e:\school\490\capstonesimulationwebots\controllers\tree_controller\x64\release\brake.obj
-e:\school\490\capstonesimulationwebots\controllers\tree_controller\x64\release\accelerometer.obj
-e:\school\490\capstonesimulationwebots\controllers\tree_controller\x64\release\tree_controller.obj
 e:\school\490\capstonesimulationwebots\controllers\tree_controller\x64\release\touchsensor.obj
 e:\school\490\capstonesimulationwebots\controllers\tree_controller\x64\release\supervisor.obj
 e:\school\490\capstonesimulationwebots\controllers\tree_controller\x64\release\speaker.obj
@@ -33,10 +36,11 @@ e:\school\490\capstonesimulationwebots\controllers\tree_controller\x64\release\p
 e:\school\490\capstonesimulationwebots\controllers\tree_controller\x64\release\node.obj
 e:\school\490\capstonesimulationwebots\controllers\tree_controller\x64\release\mouse.obj
 e:\school\490\capstonesimulationwebots\controllers\tree_controller\x64\release\motor.obj
-e:\school\490\capstonesimulationwebots\controllers\tree_controller\tree_controller.exe
-e:\school\490\capstonesimulationwebots\controllers\tree_controller\tree_controller.pdb
+e:\school\490\capstonesimulationwebots\controllers\tree_controller\x64\release\sio_client.obj
 e:\school\490\capstonesimulationwebots\controllers\tree_controller\tree_controller.ipdb
 e:\school\490\capstonesimulationwebots\controllers\tree_controller\tree_controller.iobj
+e:\school\490\capstonesimulationwebots\controllers\tree_controller\x64\release\sio_socket.obj
+e:\school\490\capstonesimulationwebots\controllers\tree_controller\tree_controller.pdb
 e:\school\490\capstonesimulationwebots\controllers\tree_controller\x64\release\tree_controller.tlog\cl.command.1.tlog
 e:\school\490\capstonesimulationwebots\controllers\tree_controller\x64\release\tree_controller.tlog\cl.read.1.tlog
 e:\school\490\capstonesimulationwebots\controllers\tree_controller\x64\release\tree_controller.tlog\cl.write.1.tlog

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="$(WEBOTS_HOME)\resources\languages\cpp\Accelerometer.cpp" />
+    <ClCompile Include="$(WEBOTS_HOME)\resources\languages\cpp\Brake.cpp" />
+    <ClCompile Include="$(WEBOTS_HOME)\resources\languages\cpp\Camera.cpp" />
+    <ClCompile Include="$(WEBOTS_HOME)\resources\languages\cpp\Compass.cpp" />
+    <ClCompile Include="$(WEBOTS_HOME)\resources\languages\cpp\Connector.cpp" />
+    <ClCompile Include="$(WEBOTS_HOME)\resources\languages\cpp\Device.cpp" />
+    <ClCompile Include="$(WEBOTS_HOME)\resources\languages\cpp\DifferentialWheels.cpp" />
+    <ClCompile Include="$(WEBOTS_HOME)\resources\languages\cpp\Display.cpp" />
+    <ClCompile Include="$(WEBOTS_HOME)\resources\languages\cpp\DistanceSensor.cpp" />
+    <ClCompile Include="$(WEBOTS_HOME)\resources\languages\cpp\Emitter.cpp" />
+    <ClCompile Include="$(WEBOTS_HOME)\resources\languages\cpp\Field.cpp" />
+    <ClCompile Include="$(WEBOTS_HOME)\resources\languages\cpp\GPS.cpp" />
+    <ClCompile Include="$(WEBOTS_HOME)\resources\languages\cpp\Gyro.cpp" />
+    <ClCompile Include="$(WEBOTS_HOME)\resources\languages\cpp\InertialUnit.cpp" />
+    <ClCompile Include="$(WEBOTS_HOME)\resources\languages\cpp\Joystick.cpp" />
+    <ClCompile Include="$(WEBOTS_HOME)\resources\languages\cpp\Keyboard.cpp" />
+    <ClCompile Include="$(WEBOTS_HOME)\resources\languages\cpp\LED.cpp" />
+    <ClCompile Include="$(WEBOTS_HOME)\resources\languages\cpp\Lidar.cpp" />
+    <ClCompile Include="$(WEBOTS_HOME)\resources\languages\cpp\LightSensor.cpp" />
+    <ClCompile Include="$(WEBOTS_HOME)\resources\languages\cpp\Motion.cpp" />
+    <ClCompile Include="$(WEBOTS_HOME)\resources\languages\cpp\Motor.cpp" />
+    <ClCompile Include="$(WEBOTS_HOME)\resources\languages\cpp\Mouse.cpp" />
+    <ClCompile Include="$(WEBOTS_HOME)\resources\languages\cpp\Node.cpp" />
+    <ClCompile Include="$(WEBOTS_HOME)\resources\languages\cpp\Pen.cpp" />
+    <ClCompile Include="$(WEBOTS_HOME)\resources\languages\cpp\PositionSensor.cpp" />
+    <ClCompile Include="$(WEBOTS_HOME)\resources\languages\cpp\Radar.cpp" />
+    <ClCompile Include="$(WEBOTS_HOME)\resources\languages\cpp\RangeFinder.cpp" />
+    <ClCompile Include="$(WEBOTS_HOME)\resources\languages\cpp\Receiver.cpp" />
+    <ClCompile Include="$(WEBOTS_HOME)\resources\languages\cpp\Robot.cpp" />
+    <ClCompile Include="$(WEBOTS_HOME)\resources\languages\cpp\Skin.cpp" />
+    <ClCompile Include="$(WEBOTS_HOME)\resources\languages\cpp\Speaker.cpp" />
+    <ClCompile Include="$(WEBOTS_HOME)\resources\languages\cpp\Supervisor.cpp" />
+    <ClCompile Include="$(WEBOTS_HOME)\resources\languages\cpp\TouchSensor.cpp" />
+    <ClCompile Include="Serial.cpp" />
+    <ClCompile Include="tree_controller.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Serial.h" />
+    <ClInclude Include="..\..\libraries\cpp-httplib\httplib.h" />
+  </ItemGroup>
+</Project>

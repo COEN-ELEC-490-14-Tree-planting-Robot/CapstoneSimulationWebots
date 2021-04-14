@@ -3,14 +3,15 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.30337657018040975 -0.9009072032500358 -0.31036892208752115 1.6267522869559579
-  position -123.83028877444063 41.00432602030507 -81.01274132431587
+  orientation 0.2313093274950688 -0.9309481597460738 -0.28254472014033016 5.001677103325193
+  position -29.106247467492018 21.793358230957068 -69.34750089348934
 }
 TexturedBackground {
 }
 TexturedBackgroundLight {
 }
 Floor {
+  rotation 0 0 1 0
   size 500 500
   appearance Parquetry {
     type "light strip"
@@ -48,6 +49,17 @@ DEF Mountain_Terrain UnevenTerrain {
   }
   flatBounds TRUE
 }
+Pedestrian {
+  translation -64.61 1.8 -86.17
+  rotation 0 1 0 1.309
+  enableBoundingObject TRUE
+}
+Rock17cm {
+  translation -62.01 0.62 -82
+}
+PublicBin {
+  translation -68.98 0.55 -82.62
+}
 DEF House ModernHouse {
   translation -96.4 0.15 -84.66
   name "modern house(Station)"
@@ -62,7 +74,7 @@ DEF House ModernHouse {
   }
 }
 DEF Tree_Bot Robot {
-  translation -75 4.22 -80
+  translation -75 0.56 -92.29
   children [
     Group {
       children [
@@ -113,6 +125,8 @@ DEF Tree_Bot Robot {
             Lidar {
               translation 0 0.29 0
               children [
+                Gyro {
+                }
                 InertialUnit {
                   name "IMU"
                 }
@@ -498,8 +512,8 @@ DEF Tree_Bot Robot {
         }
       ]
       endPoint Solid {
-        translation -0.108 0.015 0.2
-        rotation 0 0 -1 0.09999999999997634
+        translation -0.13 0.015 0.2
+        rotation 0 0 -1 0.0999999999999097
         children [
           HingeJoint {
             jointParameters HingeJointParameters {
@@ -826,7 +840,7 @@ DEF Tree_Bot Robot {
       ]
       endPoint Solid {
         translation -0.108 0.015 0.2
-        rotation 0 0 1 0.09999999999991858
+        rotation 0 0 1 0.09999999999979862
         children [
           DEF bogie_FRONTLEFT_TRANSFORM Transform {
             translation -0.075 -0.041 0.006
@@ -1021,7 +1035,7 @@ DEF Tree_Bot Robot {
       ]
       endPoint Solid {
         translation -0.108 0.015 -0.2
-        rotation 0 0 -1 0.09999999999996301
+        rotation 0 0 -1 0.0999999999998475
         children [
           HingeJoint {
             jointParameters HingeJointParameters {
@@ -1332,7 +1346,7 @@ DEF Tree_Bot Robot {
       ]
       endPoint Solid {
         translation -0.108 0.015 -0.2
-        rotation 0 0 0.9999999999999999 0.09999999999998967
+        rotation 0 0 1 0.09999999999994968
         children [
           DEF bogie_FRONTRIGHT_TRANSFORM Transform {
             translation -0.075 -0.025 -0.006
@@ -1581,9 +1595,4 @@ DEF Walls Group {
       size 200 10 0.2
     }
   ]
-}
-Floor {
-  translation 0 4 -80
-  name "floor(1)"
-  size 160 10
 }
